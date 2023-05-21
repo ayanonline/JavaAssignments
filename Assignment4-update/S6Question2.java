@@ -1,4 +1,4 @@
-abstract class Fruit {
+----------------------------------------------------------------abstract class Fruit {
     abstract void test();
 }
 

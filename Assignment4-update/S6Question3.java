@@ -1,4 +1,3 @@
-import org.omg.CORBA.ARG_OUT;
 
 class Winamp {
     final void play() {

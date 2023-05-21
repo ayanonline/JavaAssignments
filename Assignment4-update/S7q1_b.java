@@ -11,14 +11,23 @@ public class S7q1_b extends Calculator {
     }
 
     public int divide() {
-        return num1 / num2;
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            System.out.println("devisor can't be zero");
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
-        System.out.println("this is output");
         // Calculator cal = new Calculator(6, 3);
         S7q1_b obj = new S7q1_b();
-        obj.setValue(6, 3);
-        System.out.println(obj.divide());
+        try {
+            obj.setValue(6, 0);
+            System.out.println(obj.divide());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
